@@ -35,6 +35,12 @@ npm run build
 npm run deploy
 ```
 
+## GitHub Pages URL
+
+アプリケーションはGitHub Pagesでホスティングされています:
+
+https://yoshiken.github.io/VRM_Meta_Viewer/
+
 ## ライセンス
 
 MIT License
