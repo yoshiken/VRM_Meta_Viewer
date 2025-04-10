@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VRMメタビューアー</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+    #drop-area {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background-color: rgba(0, 0, 0, 0.5);
+      color: white;
+      z-index: 100;
+      pointer-events: none;
+    }
+    #meta-info {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      padding: 1rem;
+      background-color: rgba(0, 0, 0, 0.7);
+      color: white;
+      z-index: 10;
+    }
+  </style>
+</head>
+<body>
+  <div id="drop-area">
+    <h1>VRMファイルをドラッグ&ドロップ</h1>
+    <p>VRMファイルをこのウィンドウにドロップするとメタ情報が表示されます</p>
+  </div>
+  <div id="meta-info"></div>
+  <script src="bundle.js"></script>
+</body>
+</html>
